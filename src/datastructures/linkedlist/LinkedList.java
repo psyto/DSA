@@ -78,7 +78,6 @@ public class LinkedList {
             temp = temp.next;
         }
         tail = pre;
-        tail.next = null;
         length--;
         if (length == 0) {
             head = null;
