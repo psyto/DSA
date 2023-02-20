@@ -2,12 +2,6 @@ package datastructures.linkedlist;
 
 public class LinkedList {
 
-    // CREATE CLASS VARIABLES, NODE CLASS, AND CONSTRUCTOR HERE //
-    // //
-    // //
-    // //
-    // //
-    //////////////////////////////////////////////////////////////
     Node head;
     Node tail;
     int length;
