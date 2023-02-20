@@ -16,18 +16,6 @@ public class Main {
         System.out.println("\nLinked List:");
         myLinkedList.printList();
 
-        /*
-         * EXPECTED OUTPUT:
-         * ----------------
-         * Head: 4
-         * Tail: 4
-         * Length: 1
-         * 
-         * Linked List:
-         * 4
-         * 
-         */
-
     }
 
 }
