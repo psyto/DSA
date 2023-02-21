@@ -13,6 +13,7 @@ public class Main {
         myLinkedList.set(0, 4);
         myLinkedList.insert(1, 5);
         myLinkedList.remove(1);
+        myLinkedList.reverse();
 
         myLinkedList.getHead();
         myLinkedList.getTail();
