@@ -12,6 +12,7 @@ public class Main {
         myLinkedList.removeFirst();
         myLinkedList.set(0, 4);
         myLinkedList.insert(1, 5);
+        myLinkedList.remove(1);
 
         myLinkedList.getHead();
         myLinkedList.getTail();
