@@ -1,14 +1,14 @@
 package datastructures.stack;
 
 public class Stack {
-    Node top;
-    int height;
+    private Node top;
+    private int height;
 
-    class Node {
-        int value;
-        Node next;
+    private class Node {
+        private int value;
+        private Node next;
 
-        public Node(int value) {
+        private Node(int value) {
             this.value = value;
         }
     }
