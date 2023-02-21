@@ -10,6 +10,8 @@ public class Main {
         myLinkedList.removeLast();
         myLinkedList.prepend(4);
         myLinkedList.removeFirst();
+        myLinkedList.set(0, 4);
+        myLinkedList.insert(1, 5);
 
         myLinkedList.getHead();
         myLinkedList.getTail();
@@ -17,6 +19,7 @@ public class Main {
 
         System.out.println("\nLinked List:");
         myLinkedList.printList();
+        System.out.println("value of index 1: " + myLinkedList.get(1).value);
 
     }
 
