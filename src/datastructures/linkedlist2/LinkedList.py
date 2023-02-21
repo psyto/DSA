@@ -1,24 +1,24 @@
 class Node:
     def __init__(self, value):
-        self.value = value
-        self.next = None
+        self.value: int = value
+        self.next: Node = None
 
 
 class LinkedList:
     def __init__(self, value):
-        newNode = Node(value)
-        self.head = newNode
-        self.tail = newNode
-        self.length = 1
+        newNode: Node = Node(value)
+        self.head: Node = newNode
+        self.tail: Node = newNode
+        self.length: int = 1
 
-    def printList(self):
-        temp = self.head
+    def printList(self) -> None:
+        temp: Node = self.head
         while (temp != None):
             print(temp.value)
             temp = temp.next
 
-    def append(self, value):
-        newNode = Node(value)
+    def append(self, value) -> None:
+        newNode: Node = Node(value)
         if (self.length == 0):
             self.head = newNode
             self.tail = newNode
@@ -27,8 +27,8 @@ class LinkedList:
             self.tail = newNode
         self.length += 1
 
-    def prepend(self, value):
-        newNode = Node(value)
+    def prepend(self, value) -> None:
+        newNode: Node = Node(value)
         if (self.length == 0):
             self.head = newNode
             self.tail = newNode
@@ -36,11 +36,11 @@ class LinkedList:
         self.head = newNode
         self.length += 1
 
-    def removeLast(self):
+    def removeLast(self) -> Node:
         if (self.length == 0):
             return None
-        temp = self.head
-        prev = self.head
+        temp: Node = self.head
+        prev: Node = self.head
         if (self.length == 1):
             self.head = None
             self.tail = None

@@ -1,23 +1,23 @@
 class Node:
     def __init__(self, value):
-        self.value = value
-        self.next = None
+        self.value: int = value
+        self.next: Node = None
 
 
 class Stack:
     def __init__(self, value):
-        newNode = Node(value)
-        self.top = newNode
-        self.height = 1
+        newNode: Node = Node(value)
+        self.top: Node = newNode
+        self.height: int = 1
 
-    def printStack(self):
-        temp = self.top
+    def printStack(self) -> None:
+        temp: Node = self.top
         while (temp != None):
             print(temp.value)
             temp = temp.next
 
-    def push(self, value):
-        newNode = Node(value)
+    def push(self, value) -> None:
+        newNode: Node = Node(value)
         if (self.height == 0):
             self.top = newNode
         else:
@@ -25,10 +25,10 @@ class Stack:
             self.top = newNode
         self.height += 1
 
-    def pop(self):
+    def pop(self) -> Node:
         if (self.height == 0):
             return None
-        temp = self.top
+        temp: Node = self.top
         if (self.height == 1):
             self.top.next = None
         else:
