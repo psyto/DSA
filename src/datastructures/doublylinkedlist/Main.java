@@ -9,6 +9,7 @@ public class Main {
         myDLL.prepend(10);
         myDLL.removeFirst();
         myDLL.printList();
+        System.out.println("value of index 1: " + myDLL.get(1).value);
     }
 
 }
