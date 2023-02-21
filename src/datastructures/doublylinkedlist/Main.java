@@ -9,6 +9,7 @@ public class Main {
         myDLL.prepend(10);
         myDLL.removeFirst();
         myDLL.set(1, 20);
+        myDLL.insert(1, 30);
         myDLL.printList();
         System.out.println("value of index 1: " + myDLL.get(1).value);
     }
