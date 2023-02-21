@@ -12,6 +12,7 @@ public class LinkedList {
 
         public Node(int value) {
             this.value = value;
+            this.next = null;
         }
     }
 
