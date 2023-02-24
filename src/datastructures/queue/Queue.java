@@ -50,7 +50,7 @@ public class Queue {
             first = null;
             last = null;
         } else {
-            first = temp.next;
+            first = first.next;
             temp.next = null;
         }
         length--;
