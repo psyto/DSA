@@ -60,17 +60,11 @@ public class BST {
                 return true;
             }
             if (value < temp.value) {
-                if (temp.value == value) {
-                    return true;
-                } else {
-                    temp = temp.left;
-                }
+                temp = temp.left;
             } else if (value > temp.value) {
-                if (temp.value == value) {
-                    return true;
-                } else {
-                    temp = temp.right;
-                }
+                temp = temp.right;
+            } else if (value == temp.value) {
+                return true;
             }
         }
         return false;
