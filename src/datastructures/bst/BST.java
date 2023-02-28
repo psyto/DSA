@@ -49,4 +49,30 @@ public class BST {
             }
         }
     }
+
+    public boolean contains(int value) {
+        if (root == null) {
+            return false;
+        }
+        Node temp = root;
+        while (temp != null) {
+            if (value == temp.value) {
+                return true;
+            }
+            if (value < temp.value) {
+                if (temp.value == value) {
+                    return true;
+                } else {
+                    temp = temp.left;
+                }
+            } else if (value > temp.value) {
+                if (temp.value == value) {
+                    return true;
+                } else {
+                    temp = temp.right;
+                }
+            }
+        }
+        return false;
+    }
 }
