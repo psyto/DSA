@@ -12,13 +12,13 @@ class Stack:
 
     def printStack(self) -> None:
         temp: Node = self.top
-        while (temp != None):
+        while temp != None:
             print(temp.value)
             temp = temp.next
 
     def push(self, value) -> None:
         newNode: Node = Node(value)
-        if (self.height == 0):
+        if self.height == 0:
             self.top = newNode
         else:
             newNode.next = self.top
@@ -26,10 +26,10 @@ class Stack:
         self.height += 1
 
     def pop(self) -> Node:
-        if (self.height == 0):
+        if self.height == 0:
             return None
         temp: Node = self.top
-        if (self.height == 1):
+        if self.height == 1:
             self.top.next = None
         else:
             self.top = self.top.next
