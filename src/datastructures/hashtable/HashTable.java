@@ -43,6 +43,22 @@ public class HashTable {
         }
     }
 
+    public Node get(String key) {
+        int index = hash(key);
+        Node temp = dataMap[index];
+        if (temp.key == key) {
+            return temp;
+        } else {
+            while (temp.next != null) {
+                temp = temp.next;
+                if (temp.key == key) {
+                    return temp;
+                }
+            }
+            return null;
+        }
+    }
+
     public void printTable() {
         for (int i = 0; i < dataMap.length; i++) {
             System.out.println(i + ":");
