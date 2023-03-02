@@ -43,20 +43,16 @@ public class HashTable {
         }
     }
 
-    public Node get(String key) {
+    public int get(String key) {
         int index = hash(key);
         Node temp = dataMap[index];
-        if (temp.key == key) {
-            return temp;
-        } else {
-            while (temp.next != null) {
-                temp = temp.next;
-                if (temp.key == key) {
-                    return temp;
-                }
+        while (temp != null) {
+            if (temp.key == key) {
+                return temp.value;
             }
-            return null;
+            temp = temp.next;
         }
+        return 0;
     }
 
     public void printTable() {
