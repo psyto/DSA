@@ -10,6 +10,7 @@ public class Main {
         myHashTable.set("bolts", 200);
         myHashTable.set("screws", 140);
         System.out.println(myHashTable.get("tile"));
+        System.out.println(myHashTable.keys());
 
         myHashTable.printTable();
     }
